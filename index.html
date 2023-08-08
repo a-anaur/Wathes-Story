@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="www/styles/style.css">
+  <title>Bs lessons</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">E-Shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 right">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><img src="images/user.png"
+                  alt=""></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Register</a></li>
+                <li><a class="dropdown-item" href="#">Authorization</a></li>
+
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart">
+                <img src="images/shopping-cart_3144456.png" alt="">
+              </a>
+
+              <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header bg-success text-white">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Prekiu krepsys</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <table class="table">
+
+                        <tbody>
+                          <tr>
+                            <td><a href="#"><img src="images/huawei-watch-d-molly-b19-51mm-164-79bb7-kaina_large.webp"
+                                  alt=""></a></td>
+                            <td class="huawei"><a href="#">Huawei-Watch</a></td>
+                            <td>$230</td>
+                            <td>1</td>
+                            <a href="">
+                          </tr></a>
+                          <tr>
+                            <td><a href="#"><img
+                                  src="images/apple-iphone-14-pro-128gb-deep-purple-059f3-pigiau_large.webp"></a></td>
+                            <td><a href="#">Apple-phone</a></td>
+                            <td>$315</td>
+                            <td>2</td>
+                          </tr>
+                          <tr>
+                            <td><a href="#"><img src="images/prod-img/pexels-olena-bohovyk-3693700.jpg"></a></td>
+                            <td><a href="#">Panasonic</a></td>
+                            <td>$275.50</td>
+                            <td>4</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Register</a></li>
+                <li><a class="dropdown-item" href="#">Authorization</a></li>
+  
+              </ul> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="images/8726285_search_plus_icon.png" alt=""></a>
+              <!-- <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Register</a></li>
+                <li><a class="dropdown-item" href="#">Authorization</a></li>
+  
+              </ul> -->
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="new-carousel">
+
+    <div class="container my carousel">
+
+      <div class="row">
+        <div class="col-lg-9 col-md-6 col-sm-12">
+          <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel"
+            data-bs-interval="5000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/prod-img/pexels-alex-azabache-3766111.jpg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/prod-img/pexels-alex-azabache-3766112.jpg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/prod-img/pexels-alex-azabache-3766113.jpg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/prod-img/pexels-olena-bohovyk-3693700.jpg" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mt-4 right">
+          <h4>About product</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore ipsa eum illo, iste suscipit mollitia
+            cumque quia labore, itaque laborum impedit commodi reprehenderit vero consectetur.</p>
+          <h4>About product</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore ipsa eum illo, iste suscipit mollitia
+            cumque quia labore, itaque laborum impedit commodi reprehenderit vero consectetur.</p>
+          <h4>About product</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore ipsa eum illo, iste suscipit mollitia
+            cumque quia labore, itaque laborum impedit commodi reprehenderit vero consectetur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4 mb-4">
+          <div class="product-card">
+            <div class="product-thumb">
+              <a href=""><img src="images/prod-img/pexels-alex-azabache-3766111.jpg" alt=""></a>
+            </div>
+            <div class="product-details ms-3 me-3">
+
+              <h4 class="mt-4"><a href="">Watches</a></h4>
+
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam ex officiis eligendi placeat,
+                blanditiis delectus!</p>
+            </div>
+            <div class="product-bottom-details d-flex justify-content-between me-3 ms-3">
+              <div class="product-price">
+                <p>Previous <small>$230.99</small> <big><b>Now $99</b></big></p>
+              </div>
+              <div class="product-links d-flex">
+                <a class="nav-link me-3" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart">
+                  <img src="images/shopping-cart_3144456.png" alt="">
+                </a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4 mb-4">
+          <div class="product-card">
+            <div class="product-thumb">
+              <a href=""><img src="images/prod-img/pexels-alex-azabache-3766112.jpg" alt=""></a>
+            </div>
+            <div class="product-details ms-3 me-3">
+
+              <h4 class="mt-4"><a href="">Watches</a></h4>
+
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam ex officiis eligendi placeat,
+                blanditiis delectus!</p>
+            </div>
+            <div class="product-bottom-details d-flex justify-content-between me-3 ms-3">
+              <div class="product-price">
+                <p>Previous <small>$230.99</small> <big><b>Now $99</b></big></p>
+              </div>
+              <div class="product-links d-flex">
+                <a class="nav-link me-3" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart">
+                  <img src="images/shopping-cart_3144456.png" alt="">
+                </a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4 mb-4">
+          <div class="product-card">
+            <div class="product-thumb">
+              <a href=""><img src="images/prod-img/pexels-alex-azabache-3766113.jpg" alt=""></a>
+            </div>
+            <div class="product-details ms-3 me-3">
+
+              <h4 class="mt-4"><a href="">Watches</a></h4>
+
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam ex officiis eligendi placeat,
+                blanditiis delectus!</p>
+            </div>
+            <div class="product-bottom-details d-flex justify-content-between me-3 ms-3">
+              <div class="product-price">
+                <p>Previous <small>$230.99</small> <big><b>Now $99</b></big></p>
+              </div>
+              <div class="product-links d-flex">
+                <a class="nav-link me-3" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart">
+                  <img src="images/shopping-cart_3144456.png" alt="">
+                </a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4 mb-4">
+          <div class="product-card">
+            <div class="product-thumb">
+              <a href=""><img src="images/prod-img/pexels-olena-bohovyk-3693700.jpg" alt=""></a>
+            </div>
+            <div class="product-details ms-3 me-3">
+
+              <h4 class="mt-4"><a href="">Photo camera</a></h4>
+
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam ex officiis eligendi placeat,
+                blanditiis delectus!</p>
+            </div>
+            <div class="product-bottom-details d-flex justify-content-between me-3 ms-3">
+              <div class="product-price">
+                <p>Previous <small>$230.99</small> <big><b>Now $99</b></big></p>
+              </div>
+              <div class="product-links d-flex">
+                <a class="nav-link me-3" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart">
+                  <img src="images/shopping-cart_3144456.png" alt="">
+                </a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4 mb-4">
+          <div class="product-card">
+            <div class="product-thumb">
+              <a href=""><img src="images/apple-iphone-14-pro-128gb-deep-purple-059f3-pigiau_large.webp" alt=""></a>
+            </div>
+            <div class="product-details ms-3 me-3">
+
+              <h4 class="mt-4"><a href="">Apple phone</a></h4>
+
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam ex officiis eligendi placeat,
+                blanditiis delectus!</p>
+            </div>
+            <div class="product-bottom-details d-flex justify-content-between me-3 ms-3">
+              <div class="product-price">
+                <p>Previous <small>$230.99</small> <big><b>Now $99</b></big></p>
+              </div>
+              <div class="product-links d-flex">
+                <a class="nav-link me-3" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart">
+                  <img src="images/shopping-cart_3144456.png" alt="">
+                </a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4 mb-4">
+          <div class="product-card">
+            <div class="product-thumb">
+              <a href=""><img src="images/panasonic-kx-ts500-white-9440d-kaina_large.webp" alt=""></a>
+            </div>
+            <div class="product-details ms-3 me-3">
+
+              <h4 class="mt-4"><a href="">Panasonic</a></h4>
+
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam ex officiis eligendi placeat,
+                blanditiis delectus!</p>
+            </div>
+            <div class="product-bottom-details d-flex justify-content-between me-3 ms-3">
+              <div class="product-price">
+                <p>Previous <small>$230.99</small> <big><b>Now $99</b></big></p>
+              </div>
+              <div class="product-links d-flex">
+                <a class="nav-link me-3" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart">
+                  <img src="images/shopping-cart_3144456.png" alt="">
+                </a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <h4>Information</h4>
+            <ul class="list-unstyled">
+              <li><a href="">Main</a></li>
+              <li><a href="">About Shop</a></li>
+              <li><a href="">Payment</a></li>
+              <li><a href="">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h4>Opened Time</h4>
+            <ul class="list-unstyled">
+              
+              <li>Palanga, Sauletekio 8-13</li>
+              <li>All Days: 8:00 - 18:00</li>
+              
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h4>Contacts</h4>
+            <ul class="list-unstyled">             
+              <li><a href="">tel:...</a></li>
+              <li><a href="">tel:...</a></li>
+              <li><a href="">tel:...</a></li>
+              
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h4>We in internet</h4>
+            <div class="footer-icons">
+              <a href=""><img src="images/facebook.png" alt=""></a>
+              <a href=""><img src="images/twitter.png" alt=""></a>
+              <a href=""><img src="images/youtube2.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <!-- font-family: 'Roboto', sans-serif; -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
